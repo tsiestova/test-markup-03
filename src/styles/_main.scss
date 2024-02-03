@@ -14,7 +14,6 @@
 
 body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
 }
 
 .page__wrap {
@@ -30,10 +29,6 @@ body {
 
 .layout {
   padding: 0 15px;
-
-  @include desktop {
-    //padding: 0 30px;
-  }
 }
 
 .heading-medium {
@@ -64,9 +59,7 @@ body {
 
 .card__wrap {
   display: flex;
-  //align-items: center;
   justify-content: center;
-  /*max-width: 600px;*/
   margin: auto;
   padding: 5px 0;
   flex-direction: column-reverse;
@@ -87,11 +80,6 @@ body {
     width: 100%;
   }
 
-  @include desktop {
-    //width: 40%;
-  }
-
-
   .layout {
     display: flex;
     justify-content: flex-end;
@@ -102,10 +90,6 @@ body {
 
   @include tablet {
     width: 100%;
-  }
-
-  @include desktop {
-    // width: 60%;
   }
 
   img {
@@ -260,10 +244,6 @@ body {
 
 }
 
-.variant__item__title__wrap {
-
-}
-
 // Types
 
 .types__block {
@@ -348,14 +328,6 @@ body {
     background: var(--color4);
     padding: 30px 10px;
 
-    @include tablet {
-      //padding: 50px 10px;
-    }
-
-    @include desktop {
-      //padding: 20px 20px;
-    }
   }
-
 
 }
