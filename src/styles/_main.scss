@@ -52,7 +52,6 @@ body {
   }
 }
 
-
 .body-text {
   font-size: 16px;
 }
@@ -72,7 +71,6 @@ body {
   @include desktop {
     gap: 30px;
   }
-
 }
 
 .card__text__block {
@@ -114,6 +112,7 @@ body {
   justify-content: center;
   text-decoration: none;
   transition: background 200ms, color 200ms;
+  will-change: background, color;
   font-weight: 500;
   width: fit-content;
   border: 1px solid transparent;
@@ -191,12 +190,14 @@ body {
   color: var(--color2);
   font-weight: bold;
   transition: color 200ms ease-in-out;
+  will-change: color;
 }
 
 .variant__item__title {
   color: var(--color1);
   line-height: 1;
   transition: transform 200ms ease-in-out, color 200ms;
+  will-change: transform, color;
   position: absolute;
   top: 0;
   left: 20px;
@@ -238,10 +239,8 @@ body {
     .variant__item__title {
       color: var(--color2);
       transform: translateY(-5px) scale(150%);
-
     }
   }
-
 }
 
 // Types
@@ -294,7 +293,7 @@ body {
       right: 0;
       margin: auto;
       transition: background 200ms ease-in-out, color 200ms ease-in-out;
-
+      will-change: background, color;
     }
 
     img {
@@ -302,6 +301,7 @@ body {
       height: 100%;
       object-fit: cover;
       transition: transform 200ms ease-in-out;
+      will-change: transform;
     }
   }
 }
@@ -327,7 +327,5 @@ body {
     text-align: left;
     background: var(--color4);
     padding: 30px 10px;
-
   }
-
 }
